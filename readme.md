@@ -1,34 +1,11 @@
 # Creative-Communication
-Web project
 
+#### Для работы сборки у вас должны быть установлены
 
-## get started
+- npm i
 
-`npm i `
+#### Как установить проект
 
-`gulp`
-
-### libraries
-
-*jQuery, locomotive, gsap*
-
-### plugins
-
-*particles*
-
-## logo
-
-![markdown_logo](./dist/assets/img/logo.png)
-
-## pages
-
-[main page](https://creativecom.org/)
-
-
-[about us](https://creativecom.org/about/)
-
-
-[projects](https://creativecom.org/cases/)
-
-
-[team](https://creativecom.org/team/)
+1. clone this repo
+2. npm i
+3. gulp
