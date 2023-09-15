@@ -1,0 +1,230 @@
+.not-found {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(../img/stars.png);
+  overflow: hidden;
+  &__img-box {
+    max-width: 620px;
+    width: 100%;
+    margin: 0 auto;
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: center center;
+    }
+  }
+  &__ufo-box {
+    margin-top: -230px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+  }
+  &__ufo {
+    margin: 0 auto;
+    max-width: 780px;
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+  }
+  &__ufo-light-box {
+    background-image: url(../img/stars.png);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    z-index: -1;
+  }
+  &__ufo-light {
+    width: 100%;
+    mix-blend-mode: screen;
+  }
+  &__text {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1700px;
+    margin: 0 auto;
+    padding: 0 25px;
+    z-index: 1;
+    font-size: 96px;
+    & span:nth-child(1) {
+      margin-left: auto;
+      color: transparent;
+      -webkit-text-stroke: #fff;
+      -webkit-text-stroke-width: 2px;
+    }
+    & span:nth-child(2) {
+      margin-left: 30px;
+      color: transparent;
+      -webkit-text-stroke: #fff;
+      -webkit-text-stroke-width: 2px;
+    }
+    & span:nth-child(3) {
+      margin-right: auto;
+    }
+    & span:nth-child(4) {
+      position: relative;
+      margin-left: auto;
+      margin-right: 250px;
+      padding-left: 85px;
+      color: transparent;
+      -webkit-text-stroke: #fff;
+      -webkit-text-stroke-width: 2px;
+      &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        width: 65px;
+        height: 65px;
+        background-image: url(../icons/logo-white.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+  &__link {
+    position: absolute;
+    right: 60px;
+    bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 145px;
+    height: 145px;
+    border-radius: 50%;
+    border: none;
+    background-color: #770dff;
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 150%;
+      height: 150%;
+      background-image: url(../icons/ellipse.svg);
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+  .not-found {
+    &__img-box {
+      max-width: 450px;
+    }
+    &__ufo-box {
+      margin-top: -150px;
+    }
+    &__ufo {
+      max-width: 530px;
+    }
+    &__text {
+      font-size: 64px;
+    }
+    &__link {
+      bottom: 0;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .not-found {
+    &__img-box {
+      max-width: 400px;
+    }
+    &__ufo-box {
+      margin-top: -100px;
+    }
+    &__ufo {
+      max-width: 480px;
+    }
+    &__text {
+      flex-direction: column;
+      font-size: 42px;
+      & span:nth-child(1) {
+        padding-left: 38%;
+        width: 100%;
+        text-align: center;
+      }
+      & span:nth-child(2) {
+        padding-right: 38%;
+        width: 100%;
+        text-align: center;
+      }
+      & span:nth-child(3) {
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+      }
+      & span:nth-child(4) {
+        margin: 0 auto;
+        padding-left: 35px;
+        &::before {
+          width: 25px;
+          height: 25px;
+        }
+      }
+    }
+    &__link {
+      margin: 50px auto 0;
+      position: relative;
+      right: auto;
+      bottom: auto;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .not-found {
+    &__img-box {
+      max-width: 320px;
+    }
+    &__ufo-box {
+      margin-top: -80px;
+    }
+    &__ufo {
+      max-width: 290px;
+    }
+    &__text {
+      font-size: 30px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .not-found {
+    &__text {
+      padding: 0 15px;
+      & span:nth-child(1) {
+        padding-left: 0;
+        width: 100%;
+        text-align: right
+      }
+      & span:nth-child(2) {
+        margin-left: 0;
+        padding-right: 0;
+        text-align: left;
+      }
+      & span:nth-child(4) {
+        text-align: right;
+      }
+    }
+  }
+}

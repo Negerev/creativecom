@@ -1,0 +1,7 @@
+node_modules
+dist
+# Large media files
+*.tiff
+*.avi
+*.flv
+*.wmv

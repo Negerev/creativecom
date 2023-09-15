@@ -1,0 +1,165 @@
+.cases {
+  padding-top: 120px;
+  padding-bottom: 150px;
+
+  &__title {
+    margin-left: 65px;
+    margin-bottom: 45px;
+    font-family: "IBM";
+    font-size: 25px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  &__descr {
+    padding: 0 80px 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  &__big-word {
+    font-size: 135px;
+    color: transparent;
+    -webkit-text-stroke: #fff;
+    -webkit-text-stroke-width: 2px;
+    transition: color 0.3s ease-in-out;
+    &--design {
+      margin-left: 70px;
+    }
+
+    &--digital {
+      margin-left: 30%;
+      margin-right: 15%;
+    }
+    &--media {
+      margin-left: auto;
+      margin-right: 0;
+      text-align: right;
+    }
+  }
+  &__descr-img {
+    max-height: 100px;
+  }
+
+  &__list {
+    padding-right: 150px;
+    padding-left: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px 0;
+  }
+
+  &__item {
+    transform: translate(0px, 0px);
+    &:nth-child(1){}
+    &:nth-child(2){
+      margin: auto auto 0;
+    }
+    &:nth-child(3){
+      margin-top: 200px;
+      margin-bottom: 200px;
+    }
+    &:nth-child(4){
+      margin: 0 auto;
+    }
+    &:nth-child(5){
+      margin: 0 auto;
+    }
+    &:nth-child(6){}
+    &:nth-child(7){
+      margin: auto;
+    }
+    &:nth-child(8){
+      margin-top: 500px;
+    }
+    &:nth-child(9){
+      margin-top: -50px;
+    }
+    &:nth-child(10){
+      margin-top: auto;
+      margin-left: auto;
+    }
+    &:nth-child(11) {
+      margin-top: auto;
+      margin-left: 330px;
+    }
+    &:nth-child(12) {
+      margin-left: 130px;
+    }
+  }
+}
+
+@media (max-width: 1920px) {
+  .cases {
+    &__big-word {
+      font-size: 6.5vw;
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+  .cases {
+    &__descr-img {
+      max-height: 60px;
+    }
+    &__list {
+      padding-right: 50px;
+      gap: 50px 0;
+    }
+    &__item {
+      padding: 0 30px;
+    }
+    &__item:nth-child(3) {
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+    &__item:nth-child(8) {
+      margin-top: 150px;
+    }
+    &__item:nth-child(9) {
+      margin-top: -25px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .cases {
+    overflow: hidden;
+    &__descr {
+      padding: 0 30px;
+      flex-direction: column;
+      margin-bottom: 40px;
+    }
+    &__big-word {
+      margin: 0;
+    }
+    &__descr-img {
+      display: none;
+    }
+    &__item:nth-child(8) {
+      margin-top: 50px;
+    }
+    &__item:nth-child(9) {
+      margin-top: 0;
+    }
+}
+}
+
+@media (max-width: 768px) {
+  .cases {
+    overflow: hidden;
+    &__list {
+      padding: 0;
+    }
+    &__item {
+      &:nth-child(11) {
+        margin-left: 0px;
+      }
+      &:nth-child(12) {
+        margin-left: 0px;
+      }
+    }
+  }
+}

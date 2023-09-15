@@ -1,0 +1,21 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'libs';
+@import 'global';
+
+
+@import 'components/header';
+@import 'components/project-card';
+@import 'components/fixed-btn';
+@import 'components/team-card';
+@import 'components/feedback';
+@import 'components/footer';
+
+@import 'index/index';
+@import 'cases/cases';
+@import 'about/about';
+@import 'team/team';
+@import '404/404';
+
+@import 'components/next/next';

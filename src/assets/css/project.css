@@ -1,0 +1,684 @@
+.page {
+    background-color: #1e1e1e;
+    background-image: url('../images/main-background.png');
+    background-size: contain;
+}
+
+.project-page {
+    color: white;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+.container-privacy {
+    padding: 0 15px;
+}
+.container {
+    padding: 0 20px;
+}
+
+.container--ge {
+    background-color: #000;
+    background-image: url(../img/noise.png);
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px;
+    min-height: 103px;
+    border: 1px solid #770DFF;
+    border-radius: 129px;
+    font-family: 'Rifton', Arial, sans-serif;
+    font-size: 24px;
+}
+
+.main-navigation {
+    display: none;
+}
+.watch-video::-webkit-media-controls {
+    display: none;
+}
+.watch-video {
+    width: 100%;
+}
+
+.menu-toggle {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.toggle-icon {
+    width: 46px;
+    height: 28px;
+    margin-left: 30px;
+    position: relative;
+}
+
+.toggle-icon::before {
+    content: '';
+    position: absolute;
+    background-image: url('../images/menu-closed.svg');
+    background-size: contain;
+    width: inherit;
+    height: inherit;
+}
+
+.contact a:hover,
+.menu-toggle:hover {
+    color: #770DFF;
+}
+
+.menu-toggle:hover .toggle-icon::before {
+    background-image: url('../images/menu-closed-hover.svg');
+    width: 64px;
+    height: 53px;
+    top: -12px;
+    left: -10px;
+}
+
+.banner {
+    position: relative;
+    padding: 100px 0 320px 0;
+}
+
+.banner .link {
+    
+    font-family: 'IBM Plex Sans Thai', sans-serif;
+    font-size: 14px;
+    border-radius: 51px;
+    padding: 20px 35px 20px 25px;
+    margin-left: 176px;
+    width: 168px;
+    display: grid;
+    display: none;
+    grid-template-columns: 1fr 2fr;
+}
+
+.banner .link.orange {
+    color: #FF5C00;
+    border: 1px solid #FF5C00;
+}
+
+.banner .link.green {
+    color: #07B32D;
+    border: 1px solid #07B32D;
+}
+
+.banner .link.green svg path{
+    fill: #07B32D;
+}
+
+.banner .link.purple {
+    color: #770DFF;
+    border: 1px solid #770DFF;
+}
+
+.banner .link.purple svg path{
+    fill: #770DFF;
+}
+
+.banner .link.red {
+    color: #AB052D;
+    border: 1px solid #AB052D;
+}
+
+.banner .link.red svg path{
+    fill: #AB052D;
+}
+
+.banner .link.blue {
+    color: #0659FF;
+    border: 1px solid #0659FF;
+}
+
+.banner .link.blue svg path{
+    fill: #0659FF;
+}
+
+.banner .link.light-green {
+    color: #00E62A;
+    border: 1px solid #00E62A;
+}
+
+.banner .link.light-green svg path{
+    fill: #00E62A;
+}
+
+.banner .link.yellow {
+    color: #FBEC32;
+    border: 1px solid #FBEC32;
+}
+
+.banner .link.yellow svg path{
+    fill: #FBEC32;
+}
+
+.banner .title {
+    margin-left: -585px;
+    white-space: nowrap;
+    overflow-x: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.banner .title.steplaunch {
+    margin-left: -913px;
+}
+
+.banner .title.scalar {
+    margin-left: -503px;
+}
+
+.banner .title.wetouch {
+    margin-left: -665px;
+
+}
+
+.banner .title.stepnetwork {
+    margin-left: -1060px;
+    position: relative;
+    z-index: 1;
+}
+
+.banner .title.genesis {
+    margin-left: 174px;
+}
+
+.banner .title.second.genesis {
+    margin-left: -938px;
+}
+
+.banner .title.circlegen {
+    margin-left: -774px;
+}
+
+.banner .title.circle {
+    margin-left: -439px;
+}
+
+.banner .title.paveletsky {
+    margin-left: -872px;
+}
+
+.banner .title .purple {
+    -webkit-text-fill-color: #770DFF;
+    -webkit-text-stroke: 2px #770DFF;
+}
+
+.banner .title .orange {
+    -webkit-text-fill-color: #F25C05;
+    -webkit-text-stroke: 2px #F25C05;
+}
+
+.banner .title .green {
+    -webkit-text-fill-color: #07B32D;
+    -webkit-text-stroke: 2px #07B32D;
+}
+
+.banner .title .red,
+.banner .title.second .red {
+    -webkit-text-fill-color: #AB052D;
+    -webkit-text-stroke: 2px #AB052D;
+}
+
+.banner .title .blue {
+    -webkit-text-fill-color: #0659FF;
+    -webkit-text-stroke: 2px #0659FF;
+}
+
+.banner .title .light-green {
+    -webkit-text-fill-color: #00E62A;
+    -webkit-text-stroke: 2px #00E62A;
+}
+
+.banner .title .yellow {
+    -webkit-text-fill-color: #FBEC32;
+    -webkit-text-stroke: 2px #FBEC32;
+}
+
+.banner .text {
+    font-family: 'IBM Plex Sans Thai', sans-serif;
+    margin: 50px 0 0 176px;
+    width: fit-content;
+    position: relative;
+    z-index: 1;
+}
+
+.banner .text-image {
+    position: absolute;
+    right: -51px;
+    bottom: -63px;
+}
+
+.banner .logo {
+    position: absolute;
+    bottom: 122px;
+    right: 0;
+}
+
+.banner .logo.steplaunch {
+    bottom: 51px;
+    z-index: 0;
+}
+
+.banner .logo.wetouch {
+    bottom: 0px;
+    right: 57px;
+    z-index: 0;
+}
+
+.logo-video {
+    width: 100%;
+}
+
+.banner .logo.stepnetwork {
+    bottom: 82px;
+    right: 129px;
+}
+
+.banner .logo.genesis {
+    max-width: 760px;
+    width: 100%;
+    bottom: 336px;
+    right: 60px;
+}
+
+.banner .logo.circlegen {
+    bottom: 0;
+    right: 100px;
+}
+
+.banner .logo.circle {
+    bottom: 175px;
+    right: 45px;
+}
+
+.banner .logo.paveletsky {
+    bottom: -66px;
+    right: 0;
+}
+
+.promo {
+    position: relative;
+}
+
+.watch-button {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    will-change: transform;
+    transform: translate(-50%, -50%) scale(1);
+    transition: all ease-in-out 0.3s;
+    cursor: pointer;
+}
+
+.watch-button:hover {
+    will-change: transform;
+    transform: translate(-50%, -50%) scale(1.05);
+    transition: all ease-in-out 0.3s;
+}
+
+.watch-button.orange .planet svg path{
+    fill: #F25C05;
+}
+
+.watch-button.green .planet svg path{
+    fill: #05B42B;
+}
+
+.watch-button.red .planet svg path{
+    fill: #AB052D;
+}
+
+.watch-button.blue .planet svg path{
+    fill: #0659FF;
+}
+
+.watch-button.light-green .planet svg path{
+    fill: #00E62A;
+}
+
+.watch-button.yellow .planet svg path{
+    fill: #FBEC32;
+}
+
+.watch-button .orbit {
+    position: absolute;
+    top: -57px;
+    left: -88px;
+}
+
+.watch-button .planet .bottom {
+    position: absolute;
+    top: 38px;
+    left: -39px;
+}
+
+.watch-button .text {
+    font-family: 'Rifton';
+    font-size: 32px;
+    position: absolute;
+    top: calc(50% - 6px);
+    left: calc(50% - 92px);
+}
+
+.task {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 195px 0;
+}
+
+.banner .title,
+.task-title {
+    font-family: 'Rifton', sans-serif;
+    font-size: 123px;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px #fff;
+}
+
+.task-title {
+    position: relative;
+}
+
+.task-title.orange {
+    -webkit-text-stroke: 2px #F25C05;
+}
+
+.task-title.green {
+    -webkit-text-stroke: 2px #07B32D;
+}
+
+.task-title.purple {
+    -webkit-text-stroke: 2px #770DFF;
+}
+
+.task-title.red {
+    -webkit-text-stroke: 2px #AB052D;
+}
+
+.task-title.blue {
+    -webkit-text-stroke: 2px #0659FF;
+}
+
+.task-title.yellow {
+    -webkit-text-stroke: 2px #FBEC32;
+}
+
+.task-title .task-image {
+    position: absolute;
+    right: -243px;
+    bottom: -227px;
+}
+
+.task-description {
+    font-family: 'IBM Plex Sans Thai', sans-serif;
+    font-size: 36px;
+    max-width: 470px;
+}
+
+.image1 {
+    margin-top: 65px;
+}
+
+.image2 {
+    margin-top: 173px;
+}
+
+.image2 img,
+.image9 img,
+.image10 img,
+.image12 img,
+.image18 img,
+.image22 img {
+    margin: 0 auto;
+}
+
+.image3 {
+    margin: 108px 0 0 10px;
+}
+
+.image4 {
+    margin-top: 110px;
+}
+
+.image5 {
+    margin-top: 115px;
+}
+
+.image6,
+.image8 {
+    margin-top: 100px;
+}
+
+.image7 {
+    margin-top: 61px;
+}
+
+.image9 {
+    margin-top: 95px;
+}
+
+.image10 {
+    margin-top: 164px;
+}
+
+.image11 {
+    margin-top: 96px;
+}
+
+.image13 {
+    margin-left: 20px;
+}
+
+.image15 {
+    position: absolute;
+    bottom: 0;
+}
+
+.image16 img,
+.image23 img {
+    margin-left: auto;
+}
+
+.image18,
+.image17 {
+    margin-top: 275px;
+}
+
+.image19 {
+    margin-top: 183px;
+}
+
+.image20 {
+    margin-top: 200px;
+}
+
+.image21 {
+    margin-top: -200px;
+}
+
+.image22 {
+    margin-top: 260px;
+}
+
+.image24 {
+    margin-top: -80px;
+}
+
+.image25 {
+    margin-top: 290px;
+}
+
+.image26 {
+    margin-top: 220px;
+}
+
+.image27 {
+    margin-top: 40px;
+}
+
+.video-wrapper {
+    position: relative;
+}
+
+.footer.wrapper {
+    font-family: 'IBM Plex Sans Thai', Arial, sans-serif;
+    text-transform: uppercase;
+    border: 1px solid #FFFFFF;
+}
+
+.information {
+    display: flex;
+}
+
+.information div {
+    margin-left: 50px;
+}
+
+/* .contact {
+    font-family: 'Labil Grotesk';
+    font-weight: normal;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 130px;
+}
+
+.contact-title {
+    font-size: 80px;
+    position: relative;
+}
+
+.contact .title-image {
+    position: absolute;
+    bottom: -44px;
+    right: -62px;
+}
+
+.contact-description {
+    font-size: 27px;
+    max-width: 710px;
+} */
+
+.next {
+    padding: 230px 0 380px;
+    width: 100%;
+    position: relative;
+}
+
+.next-btn {
+    display: block;
+    margin: 0 auto;
+    width: auto;
+    cursor: pointer;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    transition: all .3s ease-in-out;
+}
+
+.next-btn:hover {
+    color: #770DFF;
+}
+
+.ellipse {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-55%, -70%);
+    display: block;
+}
+
+.next::before {
+    /* content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -10%;
+    height: 100%;
+    background: linear-gradient(110.95deg, rgba(119, 13, 255, 0.0) 21.8%, rgba(173, 0, 255, 0.0) 63.84%), linear-gradient(179.38deg, rgba(119, 13, 255, 0) 22.33%, #923CFF 108.25%, #770DFF 152.16%, rgba(119, 13, 255, 0) 168.47%);
+    background-blend-mode: overlay, normal;
+    z-index: -1; */
+}
+
+.star {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(10%, -365%);
+}
+
+@media (max-width: 1105px) {
+    .wrapper {
+        font-size: 20px;
+        min-height: 80px;
+    }
+
+    .banner {
+        margin-top: 75px;
+    }
+
+    .promo {
+        margin-top: 65px;
+    }
+
+    .watch-button {
+        width: 315px;
+        height: 300px;
+    }
+
+    .task {
+        margin: 100px 0;
+    }
+
+    .image2 {
+        margin-top: 90px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .banner .title, .task-title {
+        font-size: 36px;
+        margin-left: 0;
+    }
+    .wrapper {
+        font-size: 15px;
+        min-height: 60px;
+    }
+
+    .task-title {
+        font-size: 60px;
+    }
+
+    .task-description {
+        font-size: 18px;
+        max-width: 230px;
+    }
+    .banner .title.stepnetwork,
+    .banner .title.paveletsky {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 700px) {
+    .wrapper {
+        font-size: 12px;
+        min-height: 50px;
+        padding: 0 30px;
+    }
+
+    .toggle-icon {
+        width: 30px;
+        height: 18px;
+        margin-left: 15px;
+    }
+
+    .watch-button {
+        width: 240px;
+        height: 228px;
+    }
+}

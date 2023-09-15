@@ -1,0 +1,337 @@
+.header {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 20px 20px 0;
+  position: relative;
+  z-index: 10;
+  background-color: #000;
+  &__logo {
+    padding: 5px;
+    position: relative;
+  }
+  &__logo::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../../assets/img/star-blur.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+  }
+  &__logo:hover::before {
+    opacity: 1;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 60px;
+    border: 1px solid $purple;
+    border-radius: 129px;
+  }
+
+  &__left-box {
+    display: flex;
+    align-items: center;
+  }
+
+  &__contact {
+    margin-right: 15px;
+    border: none;
+    background-color: transparent;
+    text-transform: uppercase;
+    color: $green;
+    transition: all 0.3s;
+    &:hover {
+      color: $purple;
+    }
+  }
+
+  &__social {
+    width: 45px;
+    height: 45px;
+    display: inline-block;
+    & svg path {
+      transition: all 0.3s ease-in-out;
+    }
+    &:hover svg path {
+      fill: $green;
+    }
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    &:hover .header__btn-text {
+      color: $purple;
+    }
+    &:hover .header__burger span {
+      background-color: $purple;
+    }
+  }
+
+  &__btn-text {
+    margin-right: 30px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &__burger {
+    width: 45px;
+    height: 24px;
+    position: relative;
+    transform: rotate(0deg);
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    z-index: 1;
+
+    & span {
+      position: absolute;
+      left: 0;
+      width: 45px;
+      height: 1px;
+      background-color: #fff;
+      transform: rotate(0deg);
+      transition: all 0.3s ease-in-out;
+    }
+    & span:nth-child(1) {
+      top: 0px;
+      transform-origin: left center;
+    }
+    & span:nth-child(2) {
+      top: 12px;
+      transform-origin: left center;
+    }
+    & span:nth-child(3) {
+      top: 24px;
+      transform-origin: left center;
+    }
+    &.open span:nth-child(1) {
+      transform: rotate(45deg);
+      top: -4px;
+      left: 8px;
+    }
+    &.open span:nth-child(2) {
+      width: 0%;
+      opacity: 0;
+    }
+    &.open span:nth-child(3) {
+      transform: rotate(-45deg);
+      top: 28px;
+      left: 8px;
+    }
+  }
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 30px;
+    max-width: 1690px;
+  }
+
+  &__item {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      height: 50%;
+      width: 200vw;
+      opacity: 0;
+      background: linear-gradient(
+        180deg,
+        rgba(131, 103, 214, 0) 0%,
+        rgba(131, 103, 214, 0.5018382352941176) 20%,
+        rgba(131, 103, 214, 1) 35%,
+        rgba(121, 93, 203, 1) 50%,
+        rgba(131, 103, 214, 1) 65%,
+        rgba(131, 103, 214, 0.4962359943977591) 80%,
+        rgba(131, 103, 214, 0) 100%
+      );
+      z-index: -1;
+      transition: all 0.3s ease-in-out;
+    }
+
+    &:hover::after {
+      height: 200%;
+      opacity: 1;
+    }
+  }
+
+  &__link {
+    position: relative;
+    font-size: 135px;
+    color: transparent;
+    -webkit-text-stroke: #fff;
+    -webkit-text-stroke-width: 2px;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      color: #fff;
+    }
+    &--team {
+      margin-left: 25px;
+      padding-left: 170px;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: -20px;
+        transform: translateY(-50%);
+        width: 200px;
+        height: 60px;
+        background-image: url(../img/ufo.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+      }
+    }
+
+    &--contacts {
+      padding-left: 170px;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        width: 200px;
+        height: 200px;
+        mix-blend-mode: screen;
+        background-image: url(../img/star.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        z-index: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 1740px) {
+  .menu {
+    &__link {
+      font-size: 7.3vw;
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+  .menu {
+    &__link--team {
+      padding-left: 100px;
+    }
+    &__link--team::before {
+      left: 0;
+      width: 90px;
+    }
+    &__link--contacts {
+      padding-left: 100px;
+    }
+    &__link--contacts::before {
+      width: 120px;
+      height: 120px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .header {
+    &__inner {
+      padding: 20px 30px;
+    }
+  }
+
+  .menu {
+    &__list {
+      flex-direction: column;
+    }
+    &__link--team {
+      padding-left: 0;
+      margin-left: 0;
+    }
+    &__link--team::before {
+      display: none;
+    }
+    &__link--contacts {
+      padding-left: 0;
+    }
+    &__link--contacts::before {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    &__inner {
+      padding: 15px 20px;
+    }
+    &__social {
+      width: 30px;
+      height: 30px;
+      & svg {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  .menu {
+    &__item + .menu__item {
+      margin-top: 10px;
+    }
+    &__link {
+      font-size: 36px;
+    }
+  }
+}
+
+@media (max-width: 560px) {
+  .header {
+    &__inner {
+      position: relative;
+    }
+    &__contact {
+      display: none;
+    }
+    &__logo {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      & img {
+        max-height: 30px;
+      }
+    }
+    &__btn {
+      margin-left: auto;
+    }
+    &__btn-text {
+      display: none;
+    }
+  }
+}

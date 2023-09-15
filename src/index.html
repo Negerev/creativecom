@@ -1,0 +1,219 @@
+@include('html/_head.html', { 
+  "title": "Digital web agency | Creative communications",
+  "descr": "Creative Communications is a digital agency eager to launch, update and transform brands and innovative products. We focus on designing and creating websites."
+ })
+
+  @include('html/_header.html')
+
+  <div class="popup">
+    <button class="popup__close" type="button">
+      <span></span>
+      <span></span>
+    </button>
+    <div class="popup__inner">
+      <video class="popup__video" src="/assets/video/index/showreel.webm" controls="controls" preload="none"></video>
+    </div>
+  </div>
+
+  <section class="showreel">
+
+    <h1 class="sr-only">Creative Communication</h1>
+    <p class="sr-only">Creative Communications a web studio that provides services for creating high-quality responsive websites. If you need interesting animations, high-quality design to attract users, then we will help you with a solution. You can order the creation of a website right here and now. </p>
+    <h2 class="sr-only">design studio</h2>
+    <p class="sr-only">We develop design, help create new brands and rebrand. Live and interesting sites for your business is our task. We create unusual animations, use new technologies and solutions.</p>
+    <h3 class="sr-only">Modern web design</h3>
+    <p class="sr-only">our agency creates unique quality brands, digital development and design is what we can do really well</p>
+
+    <div class="showreel__logo">
+      <img src="/assets/img/logo.png" alt="logo">
+    </div>
+    <div class="showreel__ufo">
+      <video id="plate-video" class="showreel__ufo-img transparent-video" data-src="/assets/video/index/plate.webm" muted loop autoplay playsinline></video>
+      <div class="showreel__open-video">
+        showreel
+      </div>
+      <div class="showreel__ufo-light">
+        <img class="" src="/assets/img/ufo-light.png" alt="ufo-light">
+        <div id="particles-js" class="showreel__particles"></div>
+      </div>
+    </div>
+    <h1 class="sr-only">Creative communications</h1>
+    <div class="showreel__inner">
+      <div class="showreel__content">
+        <button class="showreel__btn open-contact" type="button">start contact</button>
+        <div class="showreel__big-word showreel__big-word--first">
+          <div class="word-animate">PR</div>
+        </div>
+        <div class="showreel__big-word showreel__big-word--second" data-src="design">
+          <div class="word-animate">design</div>
+        </div>
+        <div class="showreel__big-word showreel__big-word--third" data-src="digital">
+          <div class="word-animate">digital</div>
+        </div>
+        <div class="showreel__big-word showreel__big-word--fourth" data-src="adverstering">
+          <div class="word-animate">branding</div>
+          <svg class="showreel__ellipse" width="335" height="476" viewBox="0 0 335 476" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              class="ellipse-path"
+              d="M244.759 333.059C208.29 386.826 166.031 429.958 126.16 454.152C86.2617 478.361 51.7566 481.802 29.1469 464.212C6.50161 446.596 -2.86423 408.953 3.11426 358.326C9.08816 307.737 29.9457 247.941 61.676 190.49C93.4058 133.04 133.739 82.0428 174.877 47.3411C216.041 12.6166 254.977 -3.23751 284.191 2.58139C313.31 8.38139 330.956 35.3836 333.509 78.7485C336.061 122.105 323.312 178.567 297.683 237.235"
+              stroke="white"
+            />
+          </svg>
+        </div>
+        <div class="showreel__text">creating emotional connections through the digital experience</div>
+
+        <div class="showreel__text-2" data-id="design">
+          Online banners, city billboards, mobile interfaces – these are graphic design products that tell about your business and work to attract new customers.
+        </div>
+        <div class="showreel__text-2" data-id="digital">
+          Digital production, implementing the most daring ideas. Using modern technology, we create impressive product sites, advertising illustrations and architectural visualizations.
+        </div>
+        <div class="showreel__text-2" data-id="adverstering">
+          Building brands of the future. We know everything about the pharmacy market advertising. We are against advertising for the sake of advertising.
+        </div>
+        <div class="showreel__text-2" data-id="media">
+          Thanks to our partners nasdaq, blooomber, tech crunch, adforum and Epica Awards, we can create targeted media companies for any directions and tasks of ads – We know everything about pharmacy advertising market.
+        </div>
+
+        <div class="showreel__big-word showreel__big-word--fifth" data-src="media">
+          <div class="word-animate">media</div>
+        </div>
+        <div class="showreel__big-word showreel__big-word--sixth">
+          <div class="word-animate">advertising</div>
+        </div>
+
+        <video class="showreel__video transparent-video" data-id="design" data-src="/assets/video/index/design.webm" muted loop autoplay></video>
+        <video class="showreel__video transparent-video" data-id="digital" data-src="/assets/video/index/digital.webm" muted loop autoplay></video>
+        <video class="showreel__video transparent-video" data-id="adverstering" data-src="/assets/video/index/adverstering.webm" muted loop autoplay></video>
+        <video class="showreel__video transparent-video" data-id="media" data-src="/assets/video/index/media.webm" muted loop autoplay></video>
+      </div>
+    </div>
+  </section>
+
+  <section class="projects">
+    <div class="container">
+      <div class="projects__top" id="projects">
+        <h2 class="projects__title">projects</h2>
+        <div class="projects__descr">
+          <div class="projects__descr-line">creating <span>emotional</span></div>
+          <div class="projects__descr-line">connections <span>through</span></div>
+          <div class="projects__descr-line">the digital <span>experience</span></div>
+        </div>
+      </div>
+
+      <ul class="projects__list">
+        <li class="projects__item">
+          @include('html/_project-card.html', { "href": "/cases/wetouch/", "mod": "wetouch", "title": "wetouch", "text": "Main place for interactive intimate meetings of users around the world", "imgSrc": "/assets/img/project-card/wetouch.png",
+          "iconSrc": "/assets/icons/project-card/wetouch.svg", "altImg": "wetouch-hart", "altIcon": "wetouch-icon" })
+        </li>
+
+        <li class="projects__item">
+          @include('html/_project-card.html', { "href": "/cases/stepapp/", "mod": "stepapp", "title": "stepapp", "text": "Decentralized blockchain built to enable scalable, user-friendly apps for the world.", "imgSrc":
+          "/assets/img/project-card/stepapp.png", "iconSrc": "/assets/icons/project-card/stepapp.svg", "altImg": "stepapp-shoos", "altIcon": "stepapp-icon" })
+        </li>
+
+        <li class="projects__item">
+          @include('html/_project-card.html', { "href": "/cases/stepnetwork/", "mod": "stepnet", "title": "stepnetwork", "text": "Serves step ecosystem community, both users and builder. ", "imgSrc": "/assets/img/project-card/stepnet.png", "iconSrc":
+          "/assets/icons/project-card/stepnet.svg", "altImg": "stepnetwork", "altIcon": "stepnetwork-icon" })
+        </li>
+
+        <li class="projects__item">
+          @include('html/_project-card.html', { "href": "/cases/paveletsky/", "mod": "paveletsky", "title": "paveletsky", "text": "Multifunctional event space", "imgSrc": "/assets/img/project-card/paveletsky.png", "iconSrc":
+          "/assets/icons/project-card/paveletsky.svg", "altImg": "stepnetwork", "altIcon": "stepnetwork-icon" })
+        </li>
+
+        <li class="projects__item">
+          @include('html/_project-card.html', { "href": "/cases/scalar/", "mod": "scalar", "title": "scalar", "text": "Complex risk management industry.", "imgSrc": "/assets/img/project-card/scalar-drone.png", "iconSrc":
+          "/assets/icons/project-card/scalar.svg", "altImg": "scalar", "altIcon": "scalar-icon" })
+        </li>
+      </ul>
+
+      <div class="projects__btn-box">
+        <a class="projects__btn" href="/cases/">show all</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container">
+      <h2 class="about__title">about us</h2>
+
+      <div class="about__inner">
+        <div class="about__text">
+          <p>Creative Com is a full service design agency. We develop websites, products, presentations, VR/AR projects. We help update and transform brands and innovative products.</p>
+          <p>
+            We create concepts and develop projects in Digital. We are creating a product that will help you promote your business. We are interested in developing new methods and creating new technologies and solutions to make your business cooler.
+          </p>
+        </div>
+
+        <h3 class="about__subtitle">our mission</h3>
+        <div class="about__text">
+          <p>Create unique solutions with a positive effect, doing everything possible, paying special attention to team synergy, cooperation with customers and deep technical experience.</p>
+        </div>
+
+        <h3 class="about__subtitle">our vision</h3>
+        <div class="about__text">
+          <p>To contribute to the creation of a new reality, which will enhance the well-being of individuals worldwide.</p>
+        </div>
+
+        <div class="about__btn-box">
+          <button class="about__btn" type="button">start work with us</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="team" id="team">
+    <div class="container">
+      <h2 class="team__title">crew will work on your project</h2>
+
+      <div class="team__inner">
+        <div class="team__list">
+          <a class="team__item team-card" href="#">
+            <div class="team-card__img-box">
+              <img src="/assets/img/team/1.jpg" alt="creative leader">
+            </div>
+            <div class="team-card__item-title">
+              creative leader
+            </div>
+          </a>
+
+          <a class="team__item team-card" href="https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/97737915301762487864030856259016847599074451282726653516749988989699964796929" target="_blank">
+              <div class="team-card__img-box">
+                <img src="/assets/img/team/4.jpg" alt="head of marketing">
+              </div>
+              <div class="team-card__item-title">
+                head of marketing
+              </div>
+          </a>
+
+          <a class="team__item team-card" href="https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/97737915301762487864030856259016847599074451282726653516749988992998499680257/" target="_blank">
+            <div class="team-card__img-box">
+              <img src="/assets/img/team/3.jpg" alt="strategy lider">
+            </div>
+            <div class="team-card__item-title">
+              strategy lider
+            </div>
+          </a>
+ 
+          <a class="team__item team-card" href="https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/97737915301762487864030856259016847599074451282726653516749988994098011308033" target="_blank">
+            <div class="team-card__img-box">
+              <img src="/assets/img/team/6.jpg" alt="Project manager">
+            </div>
+            <div class="team-card__item-title">
+              Project manager
+            </div>
+          </a>
+        </div>
+
+        <a href="https://opensea.io/collection/creativecomaliens" target="_blank">
+          <video class="team__video transparent-video" data-src="/assets/video/index/team.webm" muted loop autoplay></video>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+
+  @include('html/_feedback.html') 
+  @include('html/_footer.html', { "mod": "" })

@@ -1,0 +1,155 @@
+.team-top {
+  padding: 40px 0 0;
+
+  &__descr {
+    position: relative;
+    max-width: 1360px;
+    padding: 0 15px;
+    margin: 0 auto 210px;
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+
+    & p + p {
+      margin-top: 50px;
+    }
+  }
+  &__list {
+    max-width: 1570px;
+    padding: 0 15px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 60px 20px;
+  }
+  &__text {
+    position: relative;
+    max-width: 1570px;
+    padding: 0 15px;
+    margin: 220px auto;
+    font-family: 'IBM';
+    font-size: 36px;
+    text-align: center;
+    line-height: 1;
+    & p + p {
+      margin-top: 40px;
+    }
+  }
+
+  &__btn {
+    position: relative;
+    padding: 30px;
+    margin: 0 auto 150px;
+    display: block;
+    max-width: 680px;
+    width: 100%;
+    box-shadow: 0px 0px 35px $green;
+    background-color: $green;
+    border: none;
+    border-radius: 100px;
+    color: #000;
+    font-size: 38px;
+    transition: all .3s ease-in-out;
+    &:hover {
+      box-shadow: 0px 0px 45px $green;
+    }
+  }
+
+  &__link {
+    position: relative;
+    display: block;
+    max-width: 420px;
+    margin: 170px auto 70px;
+    font-size: 48px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #00e62a;
+    transition: all .3s ease-in-out;
+    &:hover {
+      color: #770DFF;
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+  .team-top {
+    &__list {
+      justify-content: space-evenly;
+    }
+    &__text {
+      margin: 110px auto;
+      font-size: 24px;
+    }
+    &__btn {
+      padding: 20px;
+      max-width: 280px;
+      font-size: 18px;
+    }
+    &__link {
+      margin: 70px auto;
+      max-width: 320px;
+      font-size: 28px;
+    }
+  }
+}
+
+@media (max-width: 1280px)  {
+  .team-top {
+    &__list {
+      gap: 60px 45px;
+    }
+    &__item {
+      // width: 28%;
+    }
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .team-top {
+    overflow: hidden;
+    &__descr {
+      margin: 0 auto 50px;
+      font-size: 28px;
+    }
+
+    &__list {
+      justify-content: space-around;
+      gap: 40px 20px;
+    }
+
+    &__item {
+      width: 30%;
+    }
+
+    &__text {
+      margin: 50px auto;
+      & p + p {
+        margin-top: 20px;
+      }
+    }
+
+    &__link {
+      margin: 120px auto 50px;
+    }
+  }
+
+  .contact--team {
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 768px) {
+  .team-top {
+    &__item {
+      width: auto;
+    }
+    &__descr {
+      font-size: 18px;
+    }
+    &__text {
+      font-size: 18px;
+    }
+  }
+}

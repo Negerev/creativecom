@@ -1,0 +1,340 @@
+.next {
+    padding: 60px 0;
+    width: 100%;
+    position: relative;
+
+    &__link {
+        position: relative;
+        display: block;
+        max-width: 320px;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 48px;
+        transition: all .3s ease-in-out;
+        & .next__ellipse svg path {
+            stroke-dasharray: 1500px;
+            stroke-dashoffset: 0;
+            transition: all .3s ease-in-out;
+        }
+        &:hover {
+            color: #770DFF;
+            & .next__ellipse svg path {
+                animation: ellipse-hov .7s forwards;
+            }
+            & .next__ellipse svg stop {
+                stop-color: #770DFF;
+            }
+            & .next__star svg path {
+                fill: #770DFF;
+            }
+        }
+    }
+    &__ellipse {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 500px;
+        height: 480px;
+    }
+    &__star {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateY(-153%);
+        & svg path {
+            transition: all .3s ease-in-out;
+        }
+    }
+}
+
+@keyframes ellipse-hov {
+    from {
+        stroke-dashoffset: 1500px;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+
+
+*::-webkit-media-controls-panel {
+    display: none !important;
+    -webkit-appearance: none;
+}
+
+.orange {
+    color: rgba(255, 103, 0, 1);
+}
+
+.logo.wetouch {
+    width: calc(50% - 30px);
+    height: auto;
+}
+
+.stoped-video {
+    width: 100%;
+    height: auto;
+}
+
+.wetouch-video,
+.scalar-video {
+    width: 100%;
+    height: auto;
+}
+
+.watch-button {
+    &_orange {
+        left: calc(50% - 220px);
+        top: calc(50% - 170px);
+    }
+}
+
+.task.mt-120 {
+    margin: 120px auto 0;
+    max-width: 1920px;
+    padding: 0 15px;
+}
+.mt-60 {
+    margin: 60px auto 0;
+}
+
+.logo.stepapp, .logo.ginsburg {
+    width: calc(50% - 30px);
+    height: auto;
+}
+.logo.ginsburg {
+    bottom: -200px;
+}
+.banner.stepapp {
+    padding: 215px 0 120px 0;
+}
+.banner.stepnetwork {
+    padding: 400px 0 120px 0;
+}
+.banner .ginsburg {
+    padding: 150px 0 120px 0;
+}
+
+.banner .logo.distibuted {
+    bottom: 155px;
+    right: 57px;
+}
+.distibuted .logo-video {
+    width: calc(80% - 30px);
+    height: auto;
+}
+.banner .logo.stepapp, .banner .logo.stepnetwork {
+    bottom: -40px;
+}
+.stepapp-video {
+    width: 100%;
+    height: auto;
+}
+.stepnetwork-rel {
+    position: relative;
+    width: 100%;
+}
+.stepnetwork-absolute {
+    bottom:500px;
+}
+.logo.steplaunch {
+    z-index: -1;
+}
+.minus-mt {
+    margin: -75px auto 0;
+}
+.min-600 {
+    margin: -600px auto -600px;
+}
+.min-380 {
+    margin: -380px auto -350px;
+}
+.banner.africa{
+    padding: 200px 0 320px 0;
+}
+.banner .title .light-red {
+    -webkit-text-fill-color: #FF2020;
+    -webkit-text-stroke: 2px #FF2020;
+}
+.banner .title .aqua {
+    -webkit-text-fill-color: #09F9A2;
+    -webkit-text-stroke: 2px #09F9A2;
+}
+.banner .link.aqua {
+    color: #09F9A2;
+    border: 1px solid #09F9A2;
+    z-index: 10;
+}
+.banner .link.aqua svg path{
+    fill: #09F9A2;
+}
+.banner .link.light-aqua {
+    color: #58FFD7;
+    border: 1px solid #58FFD7;
+}
+
+.banner .link.light-aqua svg path{
+    fill: #58FFD7;
+}
+
+.banner .title .light-aqua {
+    -webkit-text-fill-color: #58FFD7;
+    -webkit-text-stroke: 2px #58FFD7;
+}
+
+
+@media (max-width: 1440px) {
+    .banner.stepapp {
+        padding: 150px 0 120px 0;
+    }
+    .banner .logo.steplaunch {
+        bottom: -100px;
+    }
+    .banner.africa{
+        padding: 100px 0 320px 0;
+    }
+
+    .next {
+        &__link {
+            font-size: 20px;
+        }
+        &__ellipse {
+            width: 350px;
+            height: 330px;
+        }
+    }
+    
+}
+
+@media (max-width: 1200px) {
+    .banner.stepapp {
+        padding: 100px 0 120px 0;
+    }
+    .banner .title.steplaunch {
+        margin-left: 10px;
+    }
+    .next {
+        padding: 190px 0 350px;
+    }
+}
+
+@media (max-width: 991px) {
+    .banner .title.wetouch {
+        margin-left: 0px;
+    }
+    .next::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -18%;
+        height: 170%;
+        background: linear-gradient(110.95deg, rgba(119, 13, 255, 0.0) 21.8%, rgba(173, 0, 255, 0.0) 63.84%), linear-gradient(179.38deg, rgba(119, 13, 255, 0) 22.33%, #923CFF 108.25%, #770DFF 152.16%, rgba(119, 13, 255, 0) 168.47%);
+        background-blend-mode: overlay, normal;
+        z-index: -1;
+    }
+    .banner.stepnetwork {
+        padding: 100px 0 400px 0;
+    }
+    .banner .logo.stepnetwork {
+        width: 50%;
+    } 
+    .banner .logo.distibuted {
+        bottom: 155px;
+        right: -192px;
+    }
+}
+
+@media (max-width: 768px) {
+    .task.mt-120 {
+        margin: 60px auto 0;
+    }
+    .mt-60 {
+        margin: 40px auto 0;
+    }
+    .banner.stepapp {
+        padding: 20px 0 200px 0;
+    }
+    .banner .logo.stepapp, .banner .logo.wetouch, .banner .logo.stepnetwork {
+        right: 50%;
+        transform: translateX(50%);
+        margin: 40px auto;
+    }
+    .banner.africa{
+        padding: 60px 0 320px 0;
+    }
+    .banner .ginsburg {
+        padding: 0px 0 120px 0;
+    }
+    .banner .logo.ginsburg {
+        position: absolute;
+        bottom: -150px;
+        right: 50%;
+    }
+    
+    .banner .logo.distibuted {
+        bottom: -10px;
+        right: -192px;
+    }
+
+    .distibuted .logo-video {
+        width: calc(52% - 30px);
+    }
+}
+
+@media (max-width: 500px) {
+    .task.mt-120 {
+        margin: 40px auto 0;
+    }
+
+    // .banner .logo.wetouch {
+    //     right: 150px;
+    // }
+    .banner .logo.stepnetwork {
+        width: 100%;
+    }
+    .banner .logo {
+        bottom: 0px;
+        right: 50%;
+    }
+    .stepapp .logo-video, .wetouch .logo-video {
+        width: 200%;
+    }
+    .banner .logo.stepapp, .banner .logo.wetouch {
+        right: 70%;
+    }
+    .banner .title.steplaunch {
+        margin-left: -260px;
+    }
+    .logo-video.ginsburg {
+        width: 200%;
+    }
+    .distibuted .logo-video {
+        width: calc(100% - 30px);
+        height: auto;
+    }
+    .banner .logo.distibuted {
+        bottom: 70px;
+        right: 0px;
+    }
+
+    .next {
+        &::before {
+            bottom: -55%;
+        }
+        &__ellipse {
+            width: 250px;
+            height: 230px;
+        }
+        &__star {
+            transform: translateY(-100%);
+            width: 25px;
+            & svg {
+                width: 100%;
+            }
+        }
+
+    }
+}

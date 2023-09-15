@@ -1,0 +1,278 @@
+.about-top {
+  padding-top: 70px;
+
+  &__title {
+    font-family: "IBM";
+    font-size: 26px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  &__ufo {
+    max-width: 575px;
+    width: 100%;
+    margin: -70px auto 60px;
+  }
+}
+
+.expertize {
+  padding-top: 100px;
+
+  &__title {
+    margin-bottom: 130px;
+    font-family: "IBM";
+    font-size: 26px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 35px;
+    max-width: 1550px;
+    margin: 0 auto;
+  }
+
+  &__item {
+    padding: 40px 40px 70px;
+    border: 1px solid #770dff;
+    border-radius: 32px;
+  }
+
+  &__img {
+    margin: 0 auto 20px;
+    max-height: 190px;
+    max-width: 310px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  &__item-title {
+    margin-bottom: 70px;
+    font-size: 38px;
+    color: #770dff;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    max-width: 420px;
+    margin: 0 auto;
+    font-family: "IBM";
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 1;
+    text-align: center;
+  }
+  &__btn {
+    position: relative;
+    display: block;
+    max-width: 810px;
+    padding: 30px;
+    margin: 200px auto 70px;
+    font-size: 48px;
+    text-transform: uppercase;
+    text-align: center;
+    border: none;
+    border-radius: 100px;
+    box-shadow: 0px 0px 35px $green;
+    background-color: $green;
+    color: #000;
+    transition: all .3s ease-in-out;
+    &:hover {
+      box-shadow: 0px 0px 45px $green;
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 500px;
+      height: 480px;
+      background-image: url(../icons/ellipse-star.svg);
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__team {
+    position: relative;
+    max-width: 1400px;
+    margin: 0 auto 120px;
+    display: flex;
+
+  }
+    &__team-gradient {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, 50%);
+      height: 50%;
+      width: 100vw;
+      opacity: 0.9;
+      background: linear-gradient(180deg,rgba(131,103,214,0) 0,rgba(131,103,214,.5018382353) 25%,#8367d6 46%,#795dcb 50%,#8367d6 65%,rgba(131,103,214,.4962359944) 80%,rgba(131,103,214,0) 100%);
+      z-index: 1;
+      transition: all .3s ease-in-out;
+      // animation: gradient-light 4s infinite;
+      // -webkit-animation: gradient-light 4s infinite;
+  //     animation-name: gradient-light;
+  //     -webkit-animation-name: gradient-light;
+  //     animation-duration: 3.0s;	
+	// -webkit-animation-duration: 3.0s;
+  // animation-iteration-count: infinite;
+	// -webkit-animation-iteration-count: infinite;	
+    }
+
+//   @keyframes gradient-light {
+//     0% {
+//       transform: translate(-50%, 50%) scaleY(1);
+//       opacity: 0.85;
+//     }
+//     50% {
+//       transform: translate(-50%, 50%) scaleY(1.1);
+//       opacity: 0.9;
+//     }
+//     100% {
+//       transform: translate(-50%, 50%) scaleY(1);
+//       opacity: 0.85;
+//     }
+//   }
+
+//   @-webkit-keyframes gradient-light {
+//     0% {
+//       -webkit-transform: translate(-50%, 0) scaleY(1);
+//       opacity: 0.85;
+//     }
+//     50% {
+//       -webkit-transform: translate(-50%, 100px) scaleY(1.1);
+//       opacity: 0.9;
+//     }
+//     100% {
+//       -webkit-transform: translate(-50%, 0) scaleY(1);
+//       opacity: 0.85;
+//     }
+// }
+
+  &__teammate {
+    max-width: 735px;
+    width: 100%;
+    & img {
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+    }
+    &--center {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 0;
+      height: 106%;
+      z-index: 1;
+    }
+  }
+
+  &__descr {
+    max-width: 1050px;
+    margin: 0 auto 50px;
+    font-size: 48px;
+    text-align: center;
+  }
+
+  &__descr-2 {
+    max-width: 800px;
+    margin: 0 auto 100px;
+    font-family: 'IBM';
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 1;
+    text-align: center;
+  }
+}
+
+
+@media (max-width: 1440px) {
+  .expertize {
+    &__item {
+      padding: 20px 20px 50px;
+    }
+    &__img {
+      max-height: 150px;
+      max-width: 250px;
+    }
+    &__item-title {
+      margin-bottom: 30px;
+      font-size: 28px;
+    }
+    &__text {
+      max-width: 340px;
+      font-size: 18px;
+    }
+    &__descr {
+      max-width: 760px;
+      font-size: 36px;
+    }
+    &__descr-2 {
+      max-width: 500px;
+      font-size: 24px;
+    }
+    &__btn {
+      padding: 20px;
+      font-size: 28px;
+      &::before {
+        width: 350px;
+        height: 320px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .about-top {
+    &__ufo {
+      max-width: 380px;
+    }
+  }
+  .expertize{
+    &__list {
+      grid-template-columns: 1fr 1fr;
+    }
+    &__btn {
+      padding: 15px;
+      font-size: 16px;
+      &::before {
+        width: 200px;
+        height: 190px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .about-top {
+    &__ufo {
+      max-width: 320px;
+      margin-top: -30px;
+    }
+  }
+  .expertize{
+    &__list {
+      display: block;
+      // grid-template-columns: 1fr;
+    }
+    &__item {
+      max-width: 360px;
+      margin: 20px auto 0;
+    }
+    &__descr {
+      font-size: 22px;
+    }
+    &__descr-2 {
+      font-size: 16px;
+    }
+  }
+}
